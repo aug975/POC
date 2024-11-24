@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className="embaixo"> 
         <Items/>
-        <Botao preco={prec}/>
+        <Botao prec={prec}/>
       </div>
     </div>
   );
