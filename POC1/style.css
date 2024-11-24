@@ -1,0 +1,293 @@
+h1,h2,h3,h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img {
+    outline: black double 3px;
+}
+.container {
+    outline: black solid 2px;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container1 {
+    outline: black solid 2px;
+    display: flex;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container2 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container3 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container4 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container5 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: DodgerBlue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container6 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    width: 60px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container7 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    background-color: DodgerBlue;
+    width: 60px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container8 {
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    width: 60px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container9 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    background-color: DodgerBlue;
+    width: 60px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container10 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container11 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container12 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container13 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container14 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container15 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.internal {
+    outline: black dotted 1px;
+}
+.container16 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container17 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container18 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container19 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container20 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container21 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 100px;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container22 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 100px;
+    row-gap: 100px;
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.container23 {
+    outline: black solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px; /* se colocarmos apenas uma medida, irá se aplicar para as duas configurações. podemos colocar duas para configurar cada uma individualmente */
+    background-color: DodgerBlue;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

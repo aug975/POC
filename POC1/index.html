@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- 
+POC 1
+Flexbox oferece um jeito dinâmico de organizar itens em um container com CSS.
+-->
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Flexbox</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <h2>Flexbox oferece um jeito dinâmico de organizar itens em um container com CSS.</h2>
+    <h3>Utilizamos como controle um container com 5 itens. Este container inicial não tem flex, e assim se organiza verticalmente.</h3>
+    <img src="container.png">
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Se adicionarmos <b>display: flex</b> ao CSS deste container, com as propriedades padrões, ele se organiza desta forma.</h3>
+    <img src="container_flex.png">
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Em um container com flex, podemos utilizar <b>flex-direction</b> para modificar a direção em que se organiza. O valor padrão é "row".</h3>
+    <h4>row</h4>
+    <img src="flex_direction_row.png">
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>row-reverse</h4>
+    <img src="row_reverse.png">
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>column</h4>
+    <img src="column.png">
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>column-reverse</h4>
+    <img src="column_reverse.png">
+    <div class="container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Podemos utilizar "flex-wrap" para garantir que, se não houver espaço na linha em que o container está, ele irá colocar o resto na próxima linha. O valor padrão, sem wrap, é "nowrap".</h3>
+    <img src="flexwrap.png">
+    <div class="container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Há tambem a opção "wrap-reverse", que coloca os itens que sobram na linha de direção oposta ao padrão.</h3>
+    <img src="wrapreverse.png">
+    <div class="container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Para organizar o código, podemos condensar as opções "flex-direction" e "flex-wrap" em uma única linha com a propriedade "flex-flow".</h3>
+    <h3>O primeiro parâmetro será a configuração de direction e o segundo a configuração de wrap.</h3>
+    <img src="flow1.png">
+    <div class="container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <img src="flow2.png">
+    <div class="container9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Podemos organizar a posição dos itens dentro do container, de forma que vão se organizar conforme o container muda de tamanho. Esta propriedade se chama "justify-content".</h3>
+    <h3>Há 6 opções principais para justificar os itens.</h3>
+    <h4>flex-start</h4>
+    <h4>Com "flex-start" os itens serão jogados para o ponto inicial da direção escolhida com "flex-direction".</h4>
+    <img src="justify_start.png">
+    <div class="container10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>flex-end</h4>
+    <h4>Com "flex-end" os itens serão jogados para o ponto final da direção escolhida com "flex-direction".</h4>
+    <img src="justify_end.png">
+    <div class="container11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>center</h4>
+    <h4>Com "center" os itens serão jogados para o centro da linha no container.</h4>
+    <img src="justify_center.png">
+    <div class="container12">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>space-between</h4>
+    <h4>Com "space-between" os itens serão distribuídos de forma consistente na linha, com o primeiro no início da linha e o último no fim da linha.</h4>
+    <img src="justify_between.png">
+    <div class="container13">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>space-around</h4>
+    <h4>Com "space-around" os itens serão distribuídos de forma consistente na linha, com espaços similares entre cada item.</h4>
+    <img src="justify_around.png">
+    <div class="container14">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h4>space-evenly</h4>
+    <h4>Com "space-evenly" os itens serão distribuídos de forma consistente na linha, com espaços iguais entre cada item.</h4>
+    <img src="justify_evenly.png">
+    <div class="container15">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <h3>Há também uma forma de organizar os itens internos no outro eixo, que também depende da direção configurada. Para isso, utilizamos "align-items".</h3>
+    <h3>Há 5 opções principais.</h3>
+    <h3 style="color: crimson;">Obs.: Há um pontilhado em volta de cada item interno para que se observe como seus tamanhos se organizam em cada configuração.</h3>
+    <h4>flex-start</h4>
+    <h4>Com "flex-start" os itens serão jogados para o ponto inicial do eixo.</h4>
+    <img src="align_start.png">
+    <div class="container16">
+        <div class="internal">1</div>
+        <div class="internal">2</div>
+        <div class="internal">3</div>  
+        <div class="internal">4</div>
+        <div class="internal">5</div>
+    </div>
+    <h4>flex-end</h4>
+    <h4>Com "flex-end" os itens serão jogados para o ponto final do eixo.</h4>
+    <img src="align_end.png">
+    <div class="container17">
+        <div class="internal">1</div>
+        <div class="internal">2</div>
+        <div class="internal">3</div>  
+        <div class="internal">4</div>
+        <div class="internal">5</div>
+    </div>
+    <h4>center</h4>
+    <h4>Com "center" os itens serão jogados para o centro do eixo.</h4>
+    <img src="align_center.png">
+    <div class="container18">
+        <div class="internal">1</div>
+        <div class="internal">2</div>
+        <div class="internal">3</div>  
+        <div class="internal">4</div>
+        <div class="internal">5</div>
+    </div>
+    <h4>stretch</h4>
+    <h4>Com "stretch" os itens serão esticados para encaixar no eixo, obedecendo limites de tamanho.</h4>
+    <img src="align_stretch.png">
+    <div class="container19">
+        <div class="internal">1</div>
+        <div class="internal">2</div>
+        <div class="internal">3</div>  
+        <div class="internal">4</div>
+        <div class="internal">5</div>
+    </div>
+    <h4>baseline</h4>
+    <h4>Com "baseline" os itens serão jogados para o eixo central que o texto segue.</h4>
+    <img src="align_base.png">
+    <div class="container20">
+        <div class="internal">1</div>
+        <div class="internal">2</div>
+        <div class="internal">3</div>  
+        <div class="internal">4</div>
+        <div class="internal">5</div>
+    </div>
+    <h3>Podemos controlar o espaço entre itens no container com a propriedade "gap".</h3>
+    <h3>Existem propriedades específicas. "row-gap" para controlar o espaço vertical, e "column-gap" para o horizontal. Mas utilizar "gap" permite condensar os dois em uma linha.</h3>
+    <img src="columngap.png">
+    <div class="container21">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <img src="bothgap.png">
+    <div class="container22">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <img src="gap.png">
+    <div class="container23">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+
+    
+  <script src="script.js"></script>
+</body>
+
+</html>
