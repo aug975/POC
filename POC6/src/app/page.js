@@ -13,15 +13,16 @@ import { useState } from 'react';
 
 export default function Home() {
   const [count, setCount] = useState(0);
-  var preco = count;
+  var prec = count;
+  var price = data.preco
 
   function increasePrice() {
-    setCount(preco + 25)
-    preco = preco + 25
+    setCount(prec + price)
+    preco = prec + price
   }
   function decreasePrice() {
-    setCount(preco - 25)
-    preco = preco - 25
+    setCount(prec - price)
+    preco = prec - price
   }
 
   return (
@@ -33,7 +34,7 @@ export default function Home() {
       </div>
       <div className="embaixo"> 
         <Items/>
-        <Botao preco={preco}/>
+        <Botao preco={prec}/>
       </div>
     </div>
   );
