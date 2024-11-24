@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+ATIVIDADE 1
+
+Criar um site estático de notícias.
+
+Deve haver uma página inicial com cards contendo título, subtítulo e um parágrafo da notícia. 
+Ao clicar no card, abrir a página completa da notícia. Nesta página, colocar um link para voltar à página inicial.
+
+O site deve ter no mínimo 3 notícias. (Buscar notícias reais)
+-->
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Notícias</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Notícias</h1>
+    <h1 class="mobile">Mobile</h1>
+    <h1 class="tablet">Tablet</h1>
+    <div class="topbar">
+    <a class="active" href="#home">Home</a>
+    </div>
+    <div class="allc">
+      <div class="card">
+          <div onclick="location.href='noticia1.html';" style="cursor: pointer;" class="container">
+          <h3><b>Alerta laranja e baixa umidade: tempo seco deixa BH com 'clima desértico'; previsão é de altas temperaturas</b></h3>
+          <h4>Capital mineira está há seis dias sob alerta laranja devido à baixa umidade do ar, que deve ficar em torno de 15% na tarde desta terça-feira (3), segundo a Defesa Civil do município. Uma nuvem de fumaça cobriu a cidade.</h4>
+          <p>O índice é considerado crítico e está relacionado ao longo período de estiagem (entenda mais abaixo). A recomendação da Organização Mundial da Saúde (OMS) é de 60%. Belo Horizonte já está há 136 dias sem chuva.</p>
+          <h6>Clique para ver notícia</h6>
+          </div>
+      </div>
+      <div class="card">
+          <div onclick="location.href='noticia2.html';" style="cursor: pointer;" class="container">
+            <h3><b>Starlink volta atrás e diz que cumprirá ordem de bloqueio do X no Brasil</b></h3>
+            <h4>Provedora de internet por satélite de Elon Musk disse no domingo (1) que só iria suspender acesso dos usuários se os seus recursos forem desbloqueados pela Justiça.</h4>
+            <p>No último domingo (3), a companhia havia dito que não seguiria a determinação do ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), que ordenou que as operadoras tirassem a rede social do ar por não indicar um representante no Brasil.</p>
+            <h6>Clique para ver notícia</h6>
+          </div>
+      </div>
+      <div class="card">
+          <div onclick="location.href='noticia3.html';" style="cursor: pointer;" class="container">
+            <h3><b>STF, Anatel e PF relatam que foram alvo de ataque hacker nos últimos dias</b></h3>
+            <h4>Anatel afirma que ataques à agência se intensificaram após decisão do ministro Alexandre de Moraes de tirar o X do ar. Ataques não causaram prejuízos aos órgãos públicos.</h4>
+            <p>O Supremo Tribunal Federal (STF), a Agência Nacional de Telecomunicações (Anatel) e a Polícia Federal foram alvos de ataques de hackers nos últimos dias.</p>
+            <h6>Clique para ver notícia</h6>
+          </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
