@@ -566,7 +566,87 @@ Com isso, as funções serão chamadas toda vez que as cadeiras forem clicadas, 
 
 ### Estilo CSS
 
+No CSS é importante alinhar itens na tela e dentro dos componentes com flexbox.
+```css
+display:flex;
+```
+Com os itens alinhados, deve-se aplicar o estilo e as cores para cada item.
+```css
+.savailable {
+  border-radius: 7px;
+  padding-bottom: 5px;
+  border-style: none;
+  background-color: #000000;
+  padding:15px;
+  z-index: 10;
+}
 
+.sselected {
+  background-color: #ff2c6c;
+  border-radius: 7px;
+  border-style: none;
+  padding-bottom: 5px;
+  padding:15px;
+  z-index: 10;
+}
+
+.sunavailable {
+  background-color: #a1a1a1;
+  border-radius: 7px;
+  border-style: none;
+  padding-bottom: 5px;
+  padding:15px;
+  z-index: 10;
+}
+```
+Isso foi feito com as cadeiras, o botão de compra, a legenda embaixo.
+Também é importante garantir que as cores estarão visíveis em dark mode e light mode.
+```css
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #20081c;
+    --foreground: #ffffff;
+  }
+  h1,h2,h3,h4, p, button {
+    filter: invert(100%);
+  }
+  .items div {
+    filter:invert(100%);
+  }
+}
+```
+Finalmente, deve-se deixar o aplicativo acessível a dispositivos móveis. Para isso, torna-se a descrição invisível e organiza-se os itens em coluna quando o viewport for menor que certo ponto.
+```css
+@media (max-width: 600px) and (orientation: portrait){
+  .info {
+    display: none;
+  }
+  .page {
+    display:flex;
+    flex-direction: column;
+  }
+  .embaixo {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin: 5px;
+    gap: 5px 5px;
+  }
+  .centro {
+    margin-bottom: 5px;
+  }
+  .botao {
+    margin: 5px;
+  }
+  .items {
+    margin: 5px;
+  }
+  button {
+    z-index: 15;
+  }
+}
+```
+Outros ajustes menores são feitos a vários itens diferentes do site para deixar a imagem organizada e centralizada quando possível.
 
 ## Linguagem
 Este projeto é um aplicativo ReactJS. Portanto, utiliza uma mistura de HTML e JavaScript, com arquivos de CSS. Há arquivos adicionais que utilizam JSON.
