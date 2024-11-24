@@ -1,11 +1,11 @@
 "use client"
 import data from "../app/data.json"
 
-function Botao({preco}) {
-  var price = preco;
+function Botao({prec}) {
+  var price = prec;
 
   function handleClick() {
-    if (preco == 0) {
+    if (prec == 0) {
       alert("ERRO: Selecione pelo menos uma cadeira")
     }
     else {
