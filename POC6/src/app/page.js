@@ -18,11 +18,11 @@ export default function Home() {
 
   function increasePrice() {
     setCount(prec + price)
-    preco = prec + price
+    prec = prec + price
   }
   function decreasePrice() {
     setCount(prec - price)
-    preco = prec - price
+    prec = prec - price
   }
 
   return (
